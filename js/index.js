@@ -71,7 +71,6 @@ window.addEventListener(events[7], (e) => {
 });
 document.addEventListener(events[8], (e) => {
 	let x = document.querySelectorAll("p");
-	console.log(x);
 	x.forEach((element) => {
 		element.style.fontSize = `${Math.floor(Math.random() * 30)}%`;
 	});
