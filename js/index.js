@@ -47,7 +47,6 @@ document.addEventListener(events[5], (e) => {});
 const allImgs = document.querySelectorAll("img");
 const randomPic = () => {
 	let x = `https://picsum.photos/${Math.floor(Math.random() * 500)}`;
-	console.log(x);
 	return x;
 };
 allImgs.forEach((img) => {
@@ -101,9 +100,7 @@ const madness = () => {
 const body = document.querySelector("body");
 
 const partyMode = (x) => {
-	console.log(x);
 	if (x == 1) {
-		console.log("gg");
 		const newH4 = document.createElement("h4");
 		newH4.textContent = `Speed:${x}`;
 		document.querySelector(`.nav-container`).append(newH4);
