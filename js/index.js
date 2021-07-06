@@ -70,8 +70,9 @@ window.addEventListener(events[6], (e) => {
 window.addEventListener(events[7], (e) => {
 	e.keyCode === 27 ? madness() : null;
 });
-window.addEventListener(events[8], (e) => {
+document.addEventListener(events[8], (e) => {
 	let x = document.querySelectorAll("p");
+	console.log(x);
 	x.forEach((element) => {
 		element.style.fontSize = `${Math.floor(Math.random() * 30)}%`;
 	});
