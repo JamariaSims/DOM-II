@@ -11,6 +11,7 @@ var events = [
 	"keyup",
 	"load",
 	"keydown",
+	"onchange",
 ];
 //Buttons Area
 const groupButtons = document.querySelectorAll("a");
@@ -68,6 +69,12 @@ window.addEventListener(events[6], (e) => {
 });
 window.addEventListener(events[7], (e) => {
 	e.keyCode === 27 ? madness() : null;
+});
+window.addEventListener(events[8], (e) => {
+	let x = document.querySelectorAll("p");
+	x.forEach((element) => {
+		element.style.fontSize = `${Math.floor(Math.random() * 30)}%`;
+	});
 });
 const madness = () => {
 	timesUserPressesEsc++;
